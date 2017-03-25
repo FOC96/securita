@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Muli', -apple-system, sans-serif;
+    overflow-y: hidden;
+}
+
+.backImage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../media/back1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -99;
+    overflow: hidden;
+}
+
+.centerDiv {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.upDiv {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+.downDiv {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+    margin-left: calc(50% - 60px);
+    margin-right: calc(50% - 60px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#signIn>input {
+    border: none;
+    background: none;
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding-left: 45px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+button {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+#btnLogIn {
+    background: none;
+    width: 80%;
+    margin-left: 10%;
+    height: 40px;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btnSecond {
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 25px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+    border: none;
+}
+
+#userLogIn {
+    background: url(../media/user.svg) no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 0px !important;
+}
+
+#passwordLogIn {
+    background: url(../media/password.svg) no-repeat !important;
+    background-size: 24px !important;
+    background-position: 10px 0px !important;
+}
+
+#signIn {
+    display: flex;
+    flex-direction: column;
+    background-image: -webkit-linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+    background-image: -o-linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+    background-image: linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+}
+
+#signUp {
+    display: flex;
+    flex-direction: column;
+    background-image: -webkit-linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+    background-image: -o-linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+    background-image: linear-gradient(rgba(54,54,54,0.50) 0%, rgba(0,135,141,0.50) 100%);
+}
