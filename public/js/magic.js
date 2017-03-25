@@ -49,5 +49,5 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 function showMapScreen() {
-    
+    location.href='map.php';
 }

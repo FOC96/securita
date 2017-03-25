@@ -10,12 +10,14 @@
         <script type="text/javascript" src="../public/js/magic.js"></script>
         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
         <script type="text/javascript" src="../public/js/reporte.js"></script>
-
     </head>
     <body>
-       <div class="header">
-              <h1>Tipo de Reporte</h1>
-        </div>
+      <div class="backImage"></div>
+       <div class="headerBar">
+          <p onclick="showMapScreen()">Cancelar</p>
+          <h3>Tipo de Reporte</h3>
+          <p>        </p>
+      </div>
        <div class="contenedor">
           
            

@@ -12,6 +12,13 @@
         <script type="text/javascript" src="../public/js/ajaxCatalogoEmergencias.js"></script>
     </head>
     <body>
+      <div class="backImage"></div>
+       <div class="headerBar">
+          <p onclick="showMapScreen()">Cancelar</p>
+          <h3>Emergencia</h3>
+          <p>        </p>
+      </div>
+      
        <div class="contenedor" id="emergencyCall">
           
            <div>
@@ -19,7 +26,7 @@
                <button class="phoneBtn" onclick="llamar()"><img src="../public/media/phone.svg"></button>
            </div>
            
-           <button class="btnToGuia">¿Qué hago ahora?</button>
+           <button class="mainButton">¿Qué hago ahora?</button>
            
        </div>
        <script type="text/javascript">

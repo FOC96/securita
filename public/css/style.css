@@ -283,10 +283,10 @@ input::-webkit-input-placeholder {
 
 .contenedor>div {
     width: 100%;
-    height: 70px;
+    height: 25%;
     border-radius: 8px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     display: flex;
@@ -297,15 +297,17 @@ input::-webkit-input-placeholder {
 }
 
 #grave {
-    border: 2px solid #D0011B;
+    margin-top: 70px;
+    background: #D0011B;
+    color: white;
 }
 
 #moderado {
-    border: 2px solid #F6A623;
+    background: #F6A623;
 }
 
 #leve {
-    border: 2px solid #F8E81C;
+    background: #F8E81C;
 }
 
 #grave>img, #moderado>img, #leve>img {
@@ -339,32 +341,28 @@ h1 {
     font-size: 18px;
     padding: 5px;
     box-sizing: border-box;
+    background: rgba(255,255,255,.8);
 }
 
 .phoneBtn {
     height: 40px;
     width: 40px;
     border-radius: 0px 4px 4px 0px;
-    background: #7ED321;
+    background: #89DE0B;
     border: none;
 }
 
-.btnToGuia {
-    width: 100%;
-    height: 40px;
-    background: #09A4C9;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 100px;
+#emergencyCall>button {
+    margin-top: 70px;
 }
 
 #emergencyCall {
     align-items: center;
     justify-content: center;
+}
+
+#emergencyCall>div {
+    background: none;
 }
 
 .caso {
@@ -439,4 +437,8 @@ h2 {
     padding-right: 10px;
     padding-left: 10px;
     box-sizing: border-box;
+}
+
+inputs, buttons {
+    outline: none;
 }
