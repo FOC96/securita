@@ -4,7 +4,10 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Muli', -apple-system, sans-serif;
-    overflow-y: hidden;
+}
+body
+{
+        overflow-y: hidden;
 }
 
 .backImage {
@@ -258,6 +261,8 @@ input::-webkit-input-placeholder {
 
 #btnEstadistica>img, #btnHistorial>img {
     height: 30px;
+    user-select:none;
+    -webkit-user-select:none;
 }
 
 #alertButton>img {
