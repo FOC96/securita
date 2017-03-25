@@ -13,7 +13,7 @@ $res = mysqli_query($conexion,$query);
 $row=mysqli_fetch_array($res);
 $idTipo = $row['idTipoAlerta'];
 
-$query = "SELECT nombreTipoAlerta FROM tipoalerta WHERE idAlerta='{$idTipo}'";
+$query = "SELECT nombreTipoAlerta FROM tipoalerta WHERE idTipoAlerta={$idTipo}";
 $res = mysqli_query($conexion,$query);
 $row=mysqli_fetch_array($res);
 $tipo = $row['nombreTipoAlerta'];
@@ -49,12 +49,13 @@ $res = mysqli_query($conexion,$query);
 $row=mysqli_fetch_array($res);
 $hora = $row['Hora'];
 
+
 echo "<ul>";
-echo "<li>{$total}</li>";
-echo "<li>{$tipo}</li>";
-echo "<li>{$estado}</li>";
-echo "<li>{$municipio}</li>";
-echo "<li>{$zona}</li>";
-echo "<li>{$hora}</li>";
+echo "<li>Cantidad de registros: {$total}</li>";
+echo "<li>Tipo de Delito con mas concurrencias: {$tipo}</li>";
+echo "<li>Estado con mas concurrencias: {$estado}</li>";
+echo "<li>Municipio con mas concurrencias: {$municipio}</li>";
+echo "<li>zona con mas concurrencias: {$zona}</li>";
+echo "<li>Horas mas concurrentes: {$hora}</li>";
 echo "</ul>";
 ?>

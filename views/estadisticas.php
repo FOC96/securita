@@ -9,6 +9,7 @@
         <link href="../public/css/sweetalert.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="../public/js/magic.js"></script>
         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
+        <script type="text/javascript" src="../public/js/estadisticas.js"></script>
 	<title>Estadisticas</title>
 </head>
 <body id="statistics" class="gray">
@@ -23,14 +24,8 @@
           <p>        </p>
       </div>
 
-<div class="contenedorAl">
-    <ul>
-		<li>Cantidad de registros</li>
-		<li>Dias</li>
-		<li>Horas mas concurrentes</li>
-		<li>Municipio y estado con mas concurrencias</li>
-		<li>zona con mas concurrencias</li>
-	</ul>
+<div class="contenedorAl" id="estadisticas">
+    
 </div>
 	
 </body>
