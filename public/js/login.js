@@ -15,12 +15,12 @@ function login(){
           location.href = gateway+'views/map.php';
         }
         else{
-          alert("Usuario o Contraseña no validos");
+          sweetAlert("Error","Usuario o Contraseña no validos","error");
         }
       }
     }
   }
   else{
-    alert("No es un correo o numero valido");
+    sweetAlert("Error","No es un correo o numero valido","error");
   }
 }

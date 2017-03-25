@@ -15,15 +15,15 @@ function registrar(){
 		registro.onreadystatechange = function (){
 			if (registro.readyState == 4) {
 				if(registro.responseText == '1'){
-					alert("Bienvenido");
+					sweetAlert("Bien","Bienvenido","success");
 					signUptoIn();
 				} if(registro.responseText == '2'){
-					alert("Intenta mas tarde");
+					sweetAlert("Error","Intenta mas tarde","error");
 				}
 			} 
 		}
 	} else {
-		alert("Los Campos son obligatorios");
+		sweetAlert("Error","Los Campos son obligatorios","error");
 		nombre.focus();
 	}
 }
