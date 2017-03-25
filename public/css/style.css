@@ -160,3 +160,27 @@ button {
 input::-webkit-input-placeholder {
     color: rgba(255,255,255,.8);
 }
+
+#userSignUp {
+    background: url(../media/user.svg) no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 0px !important;
+}
+
+#emailSignUp {
+    background: url(../media/email.svg) no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 12px !important;
+}
+
+#phoneSignUp {
+    background: url(../media/phone.svg) no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 10px !important;
+}
+
+#passwordSignUp {
+    background: url(../media/password.svg) no-repeat !important;
+    background-size: 20px !important;
+    background-position: 10px 10px !important;
+}
