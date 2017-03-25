@@ -1,6 +1,7 @@
 function login(){
   var user = document.getElementById("userLogIn").value;
   var pass = document.getElementById("passwordLogIn").value;
+  var gateway = 'http://localhost/securita/';
   user = user.replace(' ','');
   if(!isNaN(user)||user.indexOf("@")!=-1){
     enviar = new XMLHttpRequest();
@@ -11,7 +12,7 @@ function login(){
   	enviar.onreadystatechange = function(){
   		if(enviar.readyState == 4 && enviar.status == 200){
         if(enviar.responseText=="ok"){
-          Location.href("view/map.php");
+          location.href = gateway+'views/map.php';
         }
         else{
           alert("Usuario o Contraseña no validos");
