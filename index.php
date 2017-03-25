@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="public/css/style.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/magic.js"></script>
     </head>
     <body>
         
         <div class="centerDiv" id="signIn">
-            <img src="media/logo.png" id="logo">
+            <img src="public/media/logo.png" id="logo">
             
             <input type="text" id="userLogIn">
             <input type="password" id="passwordLogIn">
