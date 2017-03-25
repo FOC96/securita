@@ -6,8 +6,8 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <link href="public/css/style.css" rel="stylesheet" type="text/css">
-         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
-          <link href="../public/css/sweetalert.css" rel="stylesheet" type="text/css">
+         <script type="text/javascript" src="public/js/sweetalert.min.js"></script>
+          <link href="public/css/sweetalert.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="public/js/magic.js"></script>
         <script type="text/javascript" src="public/js/registro.js"></script>
         <script type="text/javascript" src="public/js/login.js"></script>
