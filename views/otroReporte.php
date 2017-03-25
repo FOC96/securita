@@ -11,10 +11,9 @@
         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
         <script type="text/javascript" src="../public/js/ajaxCatalogoEmergencias.js"></script>
     </head>
-    <body>
-      <div class="backImage"></div>
+    <body class="gray">
        <div class="headerBar">
-          <p onclick="showMapScreen()">Cancelar</p>
+          <p onclick="showMapScreen()"><img src="../public/media/cancel.svg"></p>
           <h3>Emergencia</h3>
           <p>        </p>
       </div>
@@ -26,7 +25,7 @@
                <button class="phoneBtn" onclick="llamar()"><img src="../public/media/phone.svg"></button>
            </div>
            
-           <button class="mainButton">¿Qué hago ahora?</button>
+           <button class="mainButtonYes">¿Qué hago ahora?</button>
            
        </div>
        <script type="text/javascript">
