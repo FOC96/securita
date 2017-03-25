@@ -16,5 +16,9 @@
 	} else {
 		$response = 'No se encontró ningún registro';
 	}
-	print_r($response);
-?>
+	$opciones = '';
+	foreach ($response as $llamada => $telefonos) {
+		$opciones .= '<option value="'.$telefonos['idContactoEmergencia'].'">'.$telefonos['nombreContacto'].' - '.$telefonos['telefonoContacto'].'</option>';
+	}
+	echo $opciones;
+?>	

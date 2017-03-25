@@ -23,16 +23,19 @@
 -->
             <div id="alertButton" onclick="prueba()"><img src="../public/media/danger.svg"></div>
             <div id="btnEstadistica"><img src="../public/media/stats.svg"></div>
-            <div id="btnHistorial"><img src="../public/media/history.svg"></div>
+            <div id="btnHistorial"><img src="../public/media/history.svg" onclick="historial()"></div>
             <div id='map'></div>
         
     </body>
     
 <script>
     function prueba() {
-        sweetAlert("bien","correcto","success");
+        location.href = 'reporte.php';
     }
     
+    function historial() {
+        location.href = 'historial.php';
+    }
 mapboxgl.accessToken = 'pk.eyJ1IjoiZm9jOTk2IiwiYSI6ImNpcmNycnlvbDAxZ2VnOG5reThybmM4cWYifQ.8VEfTTV9TYgsJ5iQnNq24A';
 var map = new mapboxgl.Map({
     container: 'map', // container id
