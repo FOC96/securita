@@ -13,8 +13,8 @@
         <div class="centerDiv" id="signIn">
             <img src="public/media/logo.png" id="logo">
             
-            <input type="text" id="userLogIn">
-            <input type="password" id="passwordLogIn">
+            <input type="text" id="userLogIn" placeholder="Correo o teléfono">
+            <input type="password" id="passwordLogIn" placeholder="Contraseña">
             
             <button id="btnLogIn" class="mainButton">Iniciar Sesión</button>
             
@@ -27,10 +27,10 @@
         
         <div class="downDiv" id="signUp">
             
-            <input type="text" id="userSignUp">
-            <input type="email" id="emailSignUp">
-            <input type="number" id="phoneSignUp">
-            <input type="password" id="passwordSignUp">
+            <input type="text" id="userSignUp" placeholder="Nombre Completo">
+            <input type="email" id="emailSignUp" placeholder="Correo">
+            <input type="number" id="phoneSignUp" placeholder="Teléfono">
+            <input type="password" id="passwordSignUp" placeholder="Contraseña">
             
             <button class="mainButton">Crear Usuario</button>
             <button class="btnOne">Ya tengo cuenta</button>
