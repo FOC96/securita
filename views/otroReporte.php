@@ -9,18 +9,14 @@
         <link href="../public/css/sweetalert.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="../public/js/magic.js"></script>
         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
+        <script type="text/javascript" src="../public/js/ajaxCatalogoEmergencias.js"></script>
     </head>
     <body>
        <div class="contenedor" id="emergencyCall">
           
            <div>
-               <select class="selSOS">
-                   <option>1</option>
-                   <option>2</option>
-                   <option>3</option>
-               </select>
-               
-               <button class="phoneBtn"><img src="../public/media/phone.svg"></button>
+               <select class="selSOS" id="telefonos"></select>
+               <button class="phoneBtn" onclick=""><img src="../public/media/phone.svg"></button>
            </div>
            
            <button class="btnToGuia">¿Qué hago ahora?</button>
