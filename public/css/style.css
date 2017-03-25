@@ -5,10 +5,6 @@
     margin: 0px;
     font-family: 'Muli', -apple-system, sans-serif;
 }
-body
-{
-        overflow-y: hidden;
-}
 
 .backImage {
     width: 100%;
@@ -369,4 +365,78 @@ h1 {
 #emergencyCall {
     align-items: center;
     justify-content: center;
+}
+
+.caso {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.6);
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.caso>h1 {
+    font-size: 20px;
+    background: rgba(255,255,255,.9);
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.caso>ol>li, .caso>ul>li {
+    font-size: 18px;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.caso>p, .caso>ol>p{
+    font-size: 18px;
+    width: 90%;
+    margin-left: 5%;
+    font-weight: 300;
+}
+
+.contenidoP {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.caso:first-of-type {
+    margin-top: 80px;
+}
+
+.headerBar {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    height: 55px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
