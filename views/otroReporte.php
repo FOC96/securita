@@ -11,19 +11,20 @@
         <script type="text/javascript" src="../public/js/sweetalert.min.js"></script>
     </head>
     <body>
-       <div class="header">
-              <h1>Tipo de Reporte</h1>
-        </div>
-       <div class="contenedor">
+       <div class="contenedor" id="emergencyCall">
           
+           <div>
+               <select class="selSOS">
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+               </select>
+               
+               <button class="phoneBtn"><img src="../public/media/phone.svg"></button>
+           </div>
            
-           <div id="grave"><img src="../public/media/gun.svg">Grave</div>
-           <div id="moderado"><img src="../public/media/knife.svg">Moderado</div>
-           <div id="leve"><img src="../public/media/fist.svg">Leve</div>
+           <button class="btnToGuia">¿Qué hago ahora?</button>
            
        </div>
-        
-        
-        <div class="backImage"></div>
     </body>
 </html>
