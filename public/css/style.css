@@ -264,7 +264,7 @@ input::-webkit-input-placeholder {
     height: 40px;
 }
 
-#btnEstudiante:active, #btnHistorial:active, #alertButton:active {
+#btnEstadistica:active, #btnHistorial:active, #alertButton:active {
     transform: scale(.8);
     transition: .4s;
 }
