@@ -26,11 +26,15 @@
                <button class="phoneBtn" onclick="llamar()"><img src="../public/media/phone.svg"></button>
            </div>
            
-           <button class="mainButton">¿Qué hago ahora?</button>
+           <button class="mainButton" onclick="guia()">¿Qué hago ahora?</button>
            
        </div>
        <script type="text/javascript">
          
+       function guia() {
+         location.href = 'guia.php';
+       }
+
          function llamar() {
             var options = telefonos.options;
             var id      = options[options.selectedIndex].id;
