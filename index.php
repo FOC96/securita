@@ -6,7 +6,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <link href="public/css/style.css" rel="stylesheet" type="text/css">
+
         <script type="text/javascript" src="public/js/magic.js"></script>
+        <script type="text/javascript" src="public/js/registro.js"></script>
     </head>
     <body>
         
@@ -32,7 +34,7 @@
             <input type="number" id="phoneSignUp" placeholder="Teléfono">
             <input type="password" id="passwordSignUp" placeholder="Contraseña">
             
-            <button class="mainButton">Crear Usuario</button>
+            <button class="mainButton" onclick="registrar()">Crear Usuario</button>
             <button class="btnOne" onclick="signUptoIn()">Ya tengo cuenta</button>
             
         </div>

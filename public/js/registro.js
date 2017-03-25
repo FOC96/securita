@@ -1,23 +1,29 @@
-function registrar() {
-	var resultado = document.querySelector('#resultadoBusqueda');
-	var mensaje = document.querySelector('#mensaje');
-	var busqueda =  document.querySelector('#barraBusqueda');
-	var datos = 'busqueda='+busqueda.value;
-	var url = config.url+'Nutricion/busqueda';
+function registrar(){
+	var gateway = 'http://localhost/securita/';
+	var nombre = document.querySelector('#userSignUp');
+	var correo = document.querySelector('#emailSignUp');
+	var telefono =  document.querySelector('#phoneSignUp');
+	var pass = document.querySelector('#passwordSignUp');
 
-	if(busqueda.value != '' && busqueda.value != null && busqueda.value != ' '){
-		search = new XMLHttpRequest();
-		search.open("POST", url ,true);
-		search.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		search.send(datos);
-		search.onreadystatechange = function (){
-			if (search.readyState == 4) {
-				mensaje.innerHTML = 'Da clic sobre la ficha del alumno a evaluar:';
-				resultado.innerHTML = search.responseText;
+	var datos = "nombre="+nombre.value+"&correo="+correo.value+"&telefono="+telefono.value+"&pass="+pass.value;
+	var url = gateway+'model/registro.php';
+	if(nombre != '' && correo != '' && telefono != '' && pass != ''){
+		registro = new XMLHttpRequest();
+		registro.open("POST", url ,true);
+		registro.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		registro.send(datos);
+		registro.onreadystatechange = function (){
+			if (registro.readyState == 4) {
+				if(registro.responseText == '1'){
+					alert("Bienvenido");
+					signUptoIn();
+				} if(registro.responseText == '2'){
+					alert("Intenta mas tarde");
+				}
 			} 
 		}
 	} else {
-		mensaje.innerHTML = 'Introduce Expediente o Nombres para realizar la busqueda';
-		resultado.innerHTML = '';
+		alert("Los Campos son obligatorios");
+		nombre.focus();
 	}
 }
