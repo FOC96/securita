@@ -16,7 +16,7 @@
       <div class="headerBar">
           <h1> </h1>
           <h3>Guías</h3>
-          <p onclick="showMapScreen()">Ok</p>
+          <p onclick="showMapScreen()">OK</p>
       </div>
       
        <div class="contenidoP">

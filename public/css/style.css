@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: rgba(255,255,255,.7);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,.3);
 }
 
 #grave {
@@ -348,7 +348,7 @@ h1 {
     height: 40px;
     width: 40px;
     border-radius: 0px 4px 4px 0px;
-    background: #89DE0B;
+    background: #5E5E5E;
     border: none;
 }
 
@@ -427,7 +427,7 @@ h2 {
     width: 100%;
     top: 0;
     position: fixed;
-    background: rgba(0,0,0,.7);
+    background: #5E5E5E;
     height: 55px;
     color: white;
     display: flex;
@@ -437,8 +437,65 @@ h2 {
     padding-right: 10px;
     padding-left: 10px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15);
+}
+
+.headerBar>h3 {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 inputs, buttons {
     outline: none;
+}
+
+.gray {
+    background: #F0EDE5;
+}
+
+#statistics>div>ul>li {
+    background: white;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    list-style: none;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+.contenedorAl {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: calc(100% - 60px);
+    top: 60px;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.headerBar>p>img {
+    height: 20px;
+}
+
+.mainButtonYes {
+    background: none;
+    width: 80%;
+    height: 40px;
+    font-weight: 600;
+    color: #5E5E5E;
+    font-size: 16px;
+    border: 2px solid #5E5E5E;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#emergencyCall>div {
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,.3);
 }
