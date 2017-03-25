@@ -207,43 +207,64 @@ input::-webkit-input-placeholder {
 #map {
     height: 100%;
 /*    background: url(../media/mapa.jpg);*/
-    z-index: 1;
 }
 
-
-.upMap {
-    width: 96%;
-    left: 2%;
-    height: 60px;
-    top: calc(100% - 60px);
+#alertButton {
+    height: 80px;
+    width: 80px;
     background: white;
+    top: calc(100% - 90px);
     position: fixed;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.6);
-    border-radius: 8px 8px 0px 0px;
-    z-index: 7;
-}
-
-.upMap>div {
-    width: 50%;
-}
-
-.alertButton {
-    height: 100px;
-    width: 100px;
-    background-image: -webkit-linear-gradient(top left, #FF0000 0%, #FF1A00 100%);
-    background-image: -o-linear-gradient(top left, #FF0000 0%, #FF1A00 100%);
-    background-image: linear-gradient(to bottom right, #FF0000 0%, #FF1A00 100%);
-    top: calc(100% - 80px);
-    position: fixed;
-    margin-left: calc(50% - 50px);
+    margin-left: calc(50% - 40px);
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.6);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
     z-index: 8;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
 }
 
 #geocoder-container > div {
     min-width:50%;
-    margin-left:25%;
-    z-index: 99;
+    float: left;
 }
 
+#btnEstadistica, #btnHistorial {
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: calc(100% - 80px);
+    z-index: 8;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+#btnEstadistica {
+    left: calc(50% - 120px);
+}
+
+#btnHistorial {
+    left: calc(50% + 60px);
+}
+
+#btnEstadistica>img, #btnHistorial>img {
+    height: 30px;
+}
+
+#alertButton>img {
+    height: 40px;
+}
+
+#btnEstudiante:active, #btnHistorial:active, #alertButton:active {
+    transform: scale(.8);
+    transition: .4s;
+}

@@ -21,16 +21,12 @@
                 <button><img src="../public/media/location.svg"></button>
             </div>
 -->
-            <div class="alertButton" onclick="prueba()"></div>
-            <div class="upMap">
-                <div id="btnEstadistica">Estadística</div>
-                <div id="btnHistorial">Historial</div>
-            </div>
+            <div id="alertButton" onclick="prueba()"><img src="../public/media/danger.svg"></div>
+            <div id="btnEstadistica"><img src="../public/media/stats.svg"></div>
+            <div id="btnHistorial"><img src="../public/media/history.svg"></div>
             <div id='map'></div>
-        </div>
         
     </body>
-    
     
 <script>
     function prueba() {
@@ -45,9 +41,7 @@ var map = new mapboxgl.Map({
     zoom: 17 // starting zoom
 });
     
-    map.addControl(new mapboxgl.GeolocateControl());
-    
-    map.addControl(new mapboxgl.NavigationControl());
+
 
     var geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken
@@ -107,6 +101,8 @@ map.addControl(geocoder);
     });
 });
 
+        map.addControl(new mapboxgl.GeolocateControl());
     
+    map.addControl(new mapboxgl.NavigationControl());
 </script>
 </html>
