@@ -25,11 +25,7 @@
                <button class="phoneBtn" onclick="llamar()"><img src="../public/media/phone.svg"></button>
            </div>
            
-<<<<<<< HEAD
-           <button class="mainButtonYes">¿Qué hago ahora?</button>
-=======
-           <button class="mainButton" onclick="guia()">¿Qué hago ahora?</button>
->>>>>>> d5e967bda3cb522fd180d994b50fe969e23b6c2f
+           <button class="mainButtonYes" onclick="guia()">¿Qué hago ahora?</button>
            
        </div>
        <script type="text/javascript">
