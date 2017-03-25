@@ -78,7 +78,7 @@ map.addControl(geocoder);
         
 
     map.addLayer({
-        "id": "points",
+        "id": "mylocation",
         "type": "circle",
         "paint": {
             "circle-radius": 10,
@@ -93,14 +93,77 @@ map.addControl(geocoder);
                     "geometry": {
                         "type": "Point",
                         "coordinates": [-100.4435, 20.7044]
-                    },
-                    "properties": {
-                        "title": "Mapbox DC",
-                        "icon": "monument"
-                    }
-                }]
+                        }
+                    }]
             }
         }
+        });
+        map.addLayer({
+        "id": "warnings",
+        "type": "circle",
+        "paint": {
+            "circle-radius": 10,
+            "circle-color": "#f4f142"
+        },
+        "source": {
+            "type": "geojson",
+            "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-100.4433, 20.7044]
+                        }
+                    }]
+                        
+                }
+            }
+    });
+
+        map.addLayer({
+        "id": "danger",
+        "type": "circle",
+        "paint": {
+            "circle-radius": 10,
+            "circle-color": "#f49841"
+        },
+        "source": {
+            "type": "geojson",
+            "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-100.4440, 20.7044]
+                        }
+                    }]
+                        
+                }
+            }
+    });
+        map.addLayer({
+        "id": "critic",
+        "type": "circle",
+        "paint": {
+            "circle-radius": 10,
+            "circle-color": "#f44141"
+        },
+        "source": {
+            "type": "geojson",
+            "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-100.4440, 20.7055]
+                        }
+                    }]
+                        
+                }
+            }
     });
 });
 
