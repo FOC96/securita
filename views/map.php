@@ -22,7 +22,7 @@
             </div>
 -->
             <div id="alertButton" onclick="prueba()"><img src="../public/media/danger.svg"></div>
-            <div id="btnEstadistica"><img src="../public/media/stats.svg"></div>
+            <div id="btnEstadistica" onclick="estadisticas()"><img src="../public/media/stats.svg"></div>
 <!--            <div id="btnHistorial"><img src="../public/media/history.svg" onclick="historial()"></div>-->
             <div id='map'></div>
         
@@ -31,6 +31,10 @@
 <script>
     function prueba() {
         location.href = 'reporte.php';
+    }
+
+    function estadisticas() {
+        location.href = 'estadisticas.php';
     }
     
     function historial() {
