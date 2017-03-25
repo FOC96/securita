@@ -33,7 +33,7 @@
             <input type="password" id="passwordSignUp" placeholder="Contraseña">
             
             <button class="mainButton">Crear Usuario</button>
-            <button class="btnOne">Ya tengo cuenta</button>
+            <button class="btnOne" onclick="signUptoIn()">Ya tengo cuenta</button>
             
         </div>
         
