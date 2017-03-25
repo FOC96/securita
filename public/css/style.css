@@ -184,3 +184,66 @@ input::-webkit-input-placeholder {
     background-size: 20px !important;
     background-position: 10px 10px !important;
 }
+
+#searchBar {
+    background: #FFFFFF;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.30);
+    border-radius: 8px;
+    float: left;
+    z-index: 3;
+    width: 86%;
+    margin-left: 8%;
+    height: 40px;
+    position: fixed;
+    margin-top: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#searchBar>input {
+    width: calc(100% - 40px);
+}
+
+#map {
+    height: 100%;
+/*    background: url(../media/mapa.jpg);*/
+    z-index: 1;
+}
+
+
+.upMap {
+    width: 96%;
+    left: 2%;
+    height: 60px;
+    top: calc(100% - 60px);
+    background: white;
+    position: fixed;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.6);
+    border-radius: 8px 8px 0px 0px;
+    z-index: 7;
+}
+
+.upMap>div {
+    width: 50%;
+}
+
+.alertButton {
+    height: 100px;
+    width: 100px;
+    background-image: -webkit-linear-gradient(top left, #FF0000 0%, #FF1A00 100%);
+    background-image: -o-linear-gradient(top left, #FF0000 0%, #FF1A00 100%);
+    background-image: linear-gradient(to bottom right, #FF0000 0%, #FF1A00 100%);
+    top: calc(100% - 80px);
+    position: fixed;
+    margin-left: calc(50% - 50px);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.6);
+    z-index: 8;
+}
+
+#geocoder-container > div {
+    min-width:50%;
+    margin-left:25%;
+    z-index: 99;
+}
+
