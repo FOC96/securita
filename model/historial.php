@@ -4,14 +4,12 @@ session_start();
 $query = "SELECT a.fechaAlerta, a.horaAlerta, b.Zona, b.Estado, b.Municipio, c.nombreTipoAlerta,
 d.descripcionReporte FROM zona b, alerta a, tipoalerta c, reporte d
 WHERE a.idZona = b.idZona
-AND d.idUsuario = {$_SESSION[id]};
 AND a.idTipoAlerta = c.idTipoAlerta
 AND d.idAlerta = a.idAlerta";
 $res = mysqli_query($conexion,$query);
 echo "<table>";
 echo "<tr>";
 echo "<th>Fecha</th><th>Hora</th><th>Zona</th><th>Estado</th><th>Municipio</th><th>Alerta</th>";
-// print_r($row=mysqli_fetch_array($res));
 while($row=mysqli_fetch_array($res)){
   echo "<tr>";
   echo "<td>{$row['fechaAlerta']}</td>";
