@@ -16,11 +16,20 @@
           
            <div>
                <select class="selSOS" id="telefonos"></select>
-               <button class="phoneBtn" onclick=""><img src="../public/media/phone.svg"></button>
+               <button class="phoneBtn" onclick="llamar()"><img src="../public/media/phone.svg"></button>
            </div>
            
            <button class="btnToGuia">¿Qué hago ahora?</button>
            
        </div>
+       <script type="text/javascript">
+         
+         function llamar() {
+            var options = telefonos.options;
+            var id      = options[options.selectedIndex].id;
+            console.log(id);
+           location.href="tel:"+id;
+         }
+       </script>
     </body>
 </html>

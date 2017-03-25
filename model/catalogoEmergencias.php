@@ -18,7 +18,7 @@
 	}
 	$opciones = '';
 	foreach ($response as $llamada => $telefonos) {
-		$opciones .= '<option value="'.$telefonos['idContactoEmergencia'].'">'.$telefonos['nombreContacto'].' - '.$telefonos['telefonoContacto'].'</option>';
+		$opciones .= '<option id="'.$telefonos['telefonoContacto'].'" value="'.$telefonos['idContactoEmergencia'].'">'.$telefonos['nombreContacto'].' - '.$telefonos['telefonoContacto'].'</option>';
 	}
 	echo $opciones;
 ?>	
